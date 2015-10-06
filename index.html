@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Convertidor de temperatura. alu0100763492@ull.edu.es</title>
+	<script type="text/javascript" src="js/temperature.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("#calcular_temperatura").click(function()
+	{
+		$("#resultado_temperatura").show("slow");
+	});
+	$("#titulo").click(function()
+	{
+
+		$("#titulo").css("font-size","Arial");
+		$("#titulo").css("color","red");
+	});
+	$("#temperatura").focus(function()
+	{
+		$(this).css("border-color","red");
+	});
+});
+</script>
+<style type="text/css">
+#titulo
+{
+	background: white;
+	border-radius: 25px;
+	border: 1px solid red;
+	color:grey;
+        padding: 5px 5px 5px 60px;
+}
+#header
+{
+	margin-left: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: ;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#resultado_temperatura
+{
+	display:none;
+}
+</style>
+	</head>
+<body>
+<div class="row">
+<div class="col-12">
+	<div class="col-4" id="header">
+		<h1 id="titulo">Conversor de Temperatura</h1>
+	</div>
+	<div class="col-8"></div>
+</div>
+</div>
+	<div class="col-12">
+		<div class="col-2"> Introduzca temperatura:</div>
+		<div class="col-7">
+			<input type="number" placeholder="32F" id="temperatura">
+		<button type="submit" id="calcular_temperatura">Calcular</button>
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="col-2"></div>
+		<div class="col-7">
+			<span id="resultado_temperatura">Resultado:</span>
+		</div>
+	</div>
+
+</body>
+</html>
