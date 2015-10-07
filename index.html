@@ -11,26 +11,46 @@ $(document).ready(function()
 	{
 		$("#resultado_temperatura").show("slow");
 	});
-	$("#titulo").click(function()
+	$("#temperatura").focusin(function()
 	{
-
-		$("#titulo").css("font-size","Arial");
-		$("#titulo").css("color","red");
+			$("#temperatura").css("border-radius","0px");
+			$("#temperatura").css("border-color","red");
+			$("#temperatura").attr("placeholder","Ejemplos: 32F,55F,67F,...");
+			$("#temperatura").attr()
 	});
-	$("#temperatura").focus(function()
+	$("#temperatura").focusout(function()
 	{
-		$(this).css("border-color","red");
+			$("#temperatura").css("border-radius","20px");
+			$("#temperatura").css("border-color","grey");
 	});
 });
 </script>
 <style type="text/css">
+
+input
+{
+	margin-top: 5px;
+	border-radius: 20px;
+	height: 25px;
+}
 #titulo
 {
 	background: white;
 	border-radius: 25px;
 	border: 1px solid red;
 	color:grey;
-        padding: 5px 5px 5px 60px;
+  padding: 5px 5px 5px 60px;
+}
+#calcular_temperatura
+{
+	border-radius:10px;
+	color:white;
+	background: blue;
+	margin-left: 10px;
+}
+div
+{
+	margin-top: 0px;
 }
 #header
 {
@@ -49,6 +69,7 @@ $(document).ready(function()
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -75,9 +96,9 @@ $(document).ready(function()
 </div>
 </div>
 	<div class="col-12">
-		<div class="col-2"> Introduzca temperatura:</div>
+		<div class="col-2">Introduzca temperatura:</div>
 		<div class="col-7">
-			<input type="number" placeholder="32F" id="temperatura">
+			<input type="text" placeholder="" id="temperatura" size="50">
 		<button type="submit" id="calcular_temperatura">Calcular</button>
 		</div>
 	</div>
@@ -87,6 +108,5 @@ $(document).ready(function()
 			<span id="resultado_temperatura">Resultado:</span>
 		</div>
 	</div>
-
 </body>
 </html>
