@@ -1,1 +1,1 @@
-# Practica2_Convertidor_Temperatura
+# Practica2_Conversor_Temperatura
