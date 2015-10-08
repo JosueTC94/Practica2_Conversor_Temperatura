@@ -1,8 +1,11 @@
-input{margin-top:5px;border-radius:20px;height:25px}
-#titulo{background:#fff;border-radius:25px;border:1px solid red;color:grey;padding:5px 5px 5px 60px}
-#calcular_temperatura{border-radius:10px;color:#fff;background:#00f;margin-left:10px}
+#converted,input{position:relative}
+#converted,body,td,th{font-size:large}
+#calcular_temperatura,h1{background:#8A4B08;color:#fff;border-radius:10px}
+input{margin-top:5px;border-radius:20px;height:30px;top:-4px;left:-4px}
+#titulo{background:#8A4B08;color:#fff;border-radius:25px;padding:5px 5px 5px 70px}
+#calcular_temperatura{margin-left:20px;margin-top:50px;height:45px;width:80px}
 div{margin-top:0}
-#header{margin-left:15px}
+#header{width:50%;margin-left:15px}
 .col-1{width:8.33%}
 .col-2{width:16.66%}
 .col-3{width:25%}
@@ -18,3 +21,7 @@ div{margin-top:0}
 [class*=col-]{float:left;padding:15px}
 .row:after{content:"";clear:both;display:block}
 #resultado_temperatura{display:none}
+td,th{vertical-align:top;text-align:right}
+#converted{color:red;font-weight:700;right:7px}
+body{background-color:#fff;font-family:sans-serif}
+h1{font-weight:400;font-family:"Brush Script MT",cursive;padding:5px 15px;display:inline-block}

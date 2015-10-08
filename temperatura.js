@@ -2,27 +2,15 @@ $(document).ready(function()
 {
 	$("#calcular_temperatura").click(function()
 	{
-		$("#resultado_temperatura").show("slow");
-		calculate();
-	});
-	$("#temperatura").focusin(function()
-	{
-			$("#temperatura").css("border-radius","0px");
-			$("#temperatura").css("border-color","red");
-			$("#temperatura").attr("placeholder","Ejemplos: 32F,55F,67F,...");
-			$("#temperatura").attr()
-	});
-	$("#temperatura").focusout(function()
-	{
-			$("#temperatura").css("border-radius","20px");
-			$("#temperatura").css("border-color","grey");
+			calculate();
 	});
 });
 
 function calculate() {
   var result;
-  var original = $("#temperatura").val();
-  var temp = original;
+  var original = document.getElementById('original');
+	//alert(original.value);
+  var temp = original.value;
   var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
 
   var m = temp.match(regexp);
@@ -39,9 +27,9 @@ function calculate() {
       result = (num - 32)*5/9;
       result = result.toFixed(3)+"º C";
     }
-    $("#resultado_temperatura").html("Resultado->"+result);
+    converted.innerHTML = result;
   }
   else {
-    $("#resultado_temperatura").html("ERROR! Try something like '-4.2C' instead");
+    converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
   }
 }
