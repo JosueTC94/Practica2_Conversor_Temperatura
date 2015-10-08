@@ -18,4 +18,4 @@ Despliegue en github.io
 
 Ejecutar las pruebas
 
-   
+   https://github.com/JosueTC94/Practica2_Conversor_Temperatura/tree/gh-pages/tests/index.html
