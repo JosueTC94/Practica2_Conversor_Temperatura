@@ -1,8 +1,8 @@
-# **ETSII ULL Grado de Informatica**
+#**Práctica 2: Conversor en JavaScript de grados Celsius a Farenheit y viceversa**
 
-**Práctica: Conversor en JavaScript de grados Celsius a Farenheit y viceversa**
+**En esta práctica se ha realizado un conversor de temperaturas de grados Celsius y Fahrenheit.**
 
-Que aprendemos
+Se ha estudiado lo siguiente:
 
     HTML básico
     JavaScript básico
@@ -11,6 +11,8 @@ Que aprendemos
     Uso de Emmet (instale el plugin para su editor)
     Uso de Mocha y Chai
     Uso de Gulp
+
+Práctica realizada por Josué Toledo Castro
 
 Despliegue en github.io
 
