@@ -1,11 +1,19 @@
 $(document).ready(function()
 {
-  $("#boton1").click(function()
-  {
-      calcular_temperatura();
-  });
+	$("#calcular_temperatura").click(function()
+	{
+		$("#resultado_temperatura").show("slow");
+	});
+	$("#temperatura").focusin(function()
+	{
+			$("#temperatura").css("border-radius","0px");
+			$("#temperatura").css("border-color","red");
+			$("#temperatura").attr("placeholder","Ejemplos: 32F,55F,67F,...");
+			$("#temperatura").attr()
+	});
+	$("#temperatura").focusout(function()
+	{
+			$("#temperatura").css("border-radius","20px");
+			$("#temperatura").css("border-color","grey");
+	});
 });
-function calcular_temperatura()
-{
-
-}

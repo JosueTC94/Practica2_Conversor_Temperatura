@@ -2,31 +2,10 @@
 <html>
 	<head>
 		<title>Convertidor de temperatura. alu0100763492@ull.edu.es</title>
-	<script type="text/javascript" src="js/temperature.js"></script>
+	<script type="text/javascript" src="temperatura.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
-$(document).ready(function()
-{
-	$("#calcular_temperatura").click(function()
-	{
-		$("#resultado_temperatura").show("slow");
-	});
-	$("#temperatura").focusin(function()
-	{
-			$("#temperatura").css("border-radius","0px");
-			$("#temperatura").css("border-color","red");
-			$("#temperatura").attr("placeholder","Ejemplos: 32F,55F,67F,...");
-			$("#temperatura").attr()
-	});
-	$("#temperatura").focusout(function()
-	{
-			$("#temperatura").css("border-radius","20px");
-			$("#temperatura").css("border-color","grey");
-	});
-});
-</script>
-<style type="text/css">
 
+<style type="text/css">
 input
 {
 	margin-top: 5px;
