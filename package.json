@@ -1,0 +1,27 @@
+{
+  "name": "Practica2_Conversor_Temperatura",
+  "version": "0.0.1",
+  "description": "ULL ESIT Grado en Ingenieria Informatica Cuarto Curso Sistemas y Tecnologias Web",
+  "main": "temperatura.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "open tests/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JosueTC94/Practica2_Conversor_Temperatura.git"
+  },
+  "keywords": [
+    "regexp"
+  ],
+  "author": "Josue Toledo Castro alu0100763492",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/JosueTC94/Practica2_Conversor_Temperatura/issues"
+  },
+  "devDependencies": {
+    "chai": "~3.3.0"
+  }
+}
