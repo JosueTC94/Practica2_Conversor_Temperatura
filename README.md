@@ -1,4 +1,4 @@
-#**Práctica 2: Conversor en de temperaturas**
+#**Práctica 2: Conversor de temperaturas**
 
 **En esta práctica se ha realizado un conversor de temperaturas de grados Celsius y Fahrenheit.**
 
