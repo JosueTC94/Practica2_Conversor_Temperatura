@@ -1,4 +1,4 @@
-#**Práctica 2: Conversor en JavaScript de grados Celsius a Farenheit y viceversa**
+#**Práctica 2: Conversor en de temperaturas**
 
 **En esta práctica se ha realizado un conversor de temperaturas de grados Celsius y Fahrenheit.**
 
