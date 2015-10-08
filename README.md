@@ -14,8 +14,8 @@ Que aprendemos
 
 Despliegue en github.io
 
-   https://github.com/JosueTC94/Practica2_Conversor_Temperatura/tree/gh-pages  
+   http://josuetc94.github.io/Practica2_Conversor_Temperatura/index.html
 
 Ejecutar las pruebas
 
-   https://github.com/JosueTC94/Practica2_Conversor_Temperatura/tree/gh-pages/tests/index.html
+   http://josuetc94.github.io/Practica2_Conversor_Temperatura/tests/index.html
