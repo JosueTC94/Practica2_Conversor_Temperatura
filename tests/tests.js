@@ -19,7 +19,7 @@ suite('temperatura', function() {
     test('57C = 134.600 Farenheit', function() {
         original.value = "57C";
         calculate();
-        assert.deepEqual(converted.innerHTML, "134.600º C");
+        assert.deepEqual(converted.innerHTML, "134.600º F");
     });
     test('-77C = -106.600 Farenheit', function() {
         original.value = "-77C";
