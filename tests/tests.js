@@ -16,4 +16,14 @@ suite('temperatura', function() {
         calculate();
         assert.match(converted.innerHTML, /ERROR/);
     });
+    test('57F = 0.000C', function() {
+        original.value = "32F";
+        calculate();
+        assert.deepEqual(converted.innerHTML, "0.000º C");
+    });
+    test('-77F = 0.000C', function() {
+        original.value = "32F";
+        calculate();
+        assert.deepEqual(converted.innerHTML, "0.000º C");
+    });
 });
