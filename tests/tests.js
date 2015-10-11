@@ -26,4 +26,10 @@ suite('temperatura', function() {
         calculate();
         assert.deepEqual(converted.innerHTML, "-106.600º F");
     });
+    test('32F != 1.000C', function()
+    {
+	original.value = "32F";
+	calculate();
+	assert.notEqual(converted.innerHTML, "1.000F");
+    });
 });
