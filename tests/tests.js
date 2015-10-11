@@ -16,26 +16,27 @@ suite('temperatura', function() {
         calculate();
         assert.match(converted.innerHTML, /ERROR/);
     });
-    test('57C = 134.600 Farenheit', function() {
-        original.value = "57C";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "134.600º F");
-    });
     test('-77C = -106.600 Farenheit', function() {
         original.value = "-77C";
         calculate();
         assert.deepEqual(converted.innerHTML, "-106.600º F");
     });
-    test('32F != 1.000C', function()
+    test('47F != 9.000C', function()
     {
-	original.value = "32F";
+	original.value = "47F";
 	calculate();
-	assert.notEqual(converted.innerHTML, "1.000º F");
+	assert.notEqual(converted.innerHTML, "9.000º F");
     });
-    test('85C < 180.000 Farenheit',function()
+    test('85C < 190.000 Farenheit',function()
     {
 	original.value = "85C";
 	calculate();
-	assert.isBelow(converted.innerHTML, "180.000º F");
-    }
+	assert.isBelow(converted.innerHTML, "190.000º F");
+    });
+    test('150F > 60.000C', function()
+    {
+	original.value = "150F";
+	calculate();
+	assert.isAbove(converted.innerHTML, "60.000º C");
+    });
 });
