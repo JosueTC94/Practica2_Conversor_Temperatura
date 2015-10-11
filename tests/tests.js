@@ -39,10 +39,9 @@ suite('temperatura', function() {
 	calculate();
 	assert.isAbove(converted.innerHTML, "60.000º C");
     });
-    test('150e4F = 833315.556 C', function()
-    {
+    test('150e4F = 833315.556 C', function() {
         original.value = "150e4F";
         calculate();
-        assert.deepEqual(converted.innerHTML, "833315.556 C");
-    });
+        assert.deepEqual(converted.innerHTML, "833315.556º C");
+   });
 });
