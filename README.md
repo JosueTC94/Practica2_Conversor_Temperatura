@@ -14,6 +14,8 @@ Se ha estudiado lo siguiente:
 
 Práctica realizada por Josué Toledo Castro
 
+Asignatura: "Sistemas y Tecnologías Web"
+
 Despliegue en github.io
 
    http://josuetc94.github.io/Practica2_Conversor_Temperatura/index.html
