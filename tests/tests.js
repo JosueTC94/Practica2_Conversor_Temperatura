@@ -30,6 +30,12 @@ suite('temperatura', function() {
     {
 	original.value = "32F";
 	calculate();
-	assert.notEqual(converted.innerHTML, "1.000F");
+	assert.notEqual(converted.innerHTML, "1.000º F");
     });
+    test('85C < 180.000 Farenheit',function()
+    {
+	original.value = "85C";
+	calculate();
+	assert.isBelow(converted.innerHTML, "180.000º F");
+    }
 });
