@@ -2,8 +2,9 @@
 
 **En este sección se han realizado pruebas con las herramientas:**
 
->Mocha
->Chai
+*Mocha
+
+Chai*
 
 Práctica realizada por Josué Toledo Castro.
 
