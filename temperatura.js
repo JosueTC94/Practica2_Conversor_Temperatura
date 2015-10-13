@@ -16,11 +16,6 @@ $(document).ready(function()
 			calculate();
 	});
 });
-function medida(valor)
-{
-	this.Valor: ;
-	this.Tipo: ;
-}
 
 function calculate() {
   var result;
