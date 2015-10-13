@@ -16,25 +16,30 @@ $(document).ready(function()
 			calculate();
 	});
 });
+function medida(valor)
+{
+	this.Valor: ;
+	this.Tipo: ;
+}
 
 function calculate() {
   var result;
   var original = document.getElementById('original');
 	//alert(original.value);
   var temp = original.value;
-  
+
   //var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
   var regexp =  /([-+]?\d+(?:\.\d*)?)([eE]?([-+]?\d+))?(\s*[cCfF])/;
-  
+
   var m = temp.match(regexp);
 
   if (m) {
     var numero = m[1];
-    var exponente = m[3];    
+    var exponente = m[3];
     var type = m[4];
     numero = parseFloat(numero);
     exponente = parseInt(exponente);
-    
+
     var auxiliar=10;
     if(exponente)
     {
@@ -45,7 +50,7 @@ function calculate() {
 	for(i=1;i<exponente;i++)
 	{
 		auxiliar = auxiliar*10;
-	}	
+	}
 	numero = numero/auxiliar;
     }else
     {
@@ -55,7 +60,7 @@ function calculate() {
         }
         numero = numero*auxiliar;
     }
-   } 
+   }
     if (type == 'c' || type == 'C') {
 
    	result = (numero * 9/5)+32;
